@@ -1,4 +1,4 @@
-export default data = [
+const data = [
   {
     slug: "orange-red-and-green",
     artist: "Steve Johnson",
@@ -162,3 +162,5 @@ export default data = [
     },
   },
 ];
+
+export default data;
