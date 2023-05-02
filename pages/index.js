@@ -1,7 +1,11 @@
-export default function HomePage() {
+import List from "./list";
+
+export default function HomePage({ data, onToggleFavorite, artPiecesInfo }) {
   return (
-    <div>
-      <h1>Hello from Next.js</h1>
-    </div>
+    <List
+      data={data}
+      onToggleFavorite={onToggleFavorite}
+      artPiecesInfo={artPiecesInfo}
+    />
   );
 }
