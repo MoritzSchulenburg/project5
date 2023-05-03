@@ -4,7 +4,7 @@ import { Navigation } from "../Navigation";
 
 export default function ArtPieces({ pieces }) {
   return (
-    <div>
+    <StyledWrapper>
       <>
         <StyledHeader>Art Gallery</StyledHeader>
         {pieces.map((piece) => {
@@ -21,9 +21,16 @@ export default function ArtPieces({ pieces }) {
           <Navigation />
         </StyledNavigation>
       </>
-    </div>
+    </StyledWrapper>
   );
 }
+
+const StyledWrapper = styled.div`
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
 
 const StyledHeader = styled.header`
   display: flex;

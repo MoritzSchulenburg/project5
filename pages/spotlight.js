@@ -19,7 +19,7 @@ export default function SpotlightPage({ pieces }) {
   }, [pieces]);
 
   return (
-    <>
+    <StyledWrapper>
       <StyledHeader>Spotlight</StyledHeader>
       <StyledUL>
         <styledLi>
@@ -29,9 +29,16 @@ export default function SpotlightPage({ pieces }) {
       <StyledNavigation>
         <Navigation />
       </StyledNavigation>
-    </>
+    </StyledWrapper>
   );
 }
+
+const StyledWrapper = styled.div`
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
 
 const StyledUL = styled.ul`
   list-style: none;
@@ -40,6 +47,7 @@ const StyledUL = styled.ul`
   flex-wrap: wrap;
   font-size: 10px;
   gap: 10px;
+  justify-content: center;
 `;
 const styledLi = styled.li`
   display: flex;
@@ -78,4 +86,5 @@ const StyledHeader = styled.header`
   top: 0;
   width: 100%;
   border-radius: 5px;
+  margin-bottom: 10px;
 `;

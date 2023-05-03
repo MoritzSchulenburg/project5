@@ -6,10 +6,12 @@ export function Navigation() {
     <>
       <StyledNavigation>
         <StyledLi>
-          <Link href="/">Home</Link>
+          <a href="/">Home</a>
         </StyledLi>
         <StyledLi>
-          <Link href="/spotlight">Spotlight</Link>
+          <a className="SpotlightLink" href="/spotlight">
+            Spotlight
+          </a>
         </StyledLi>
       </StyledNavigation>
     </>
@@ -35,4 +37,11 @@ const StyledNavigation = styled.div`
 
 const StyledLi = styled.li`
   list-style-type: none;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
+
+const SpotlightLink = styled.link;
