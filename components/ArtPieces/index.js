@@ -3,7 +3,7 @@ import ArtPiecePreview from "../ArtPiecePreview";
 export default function ArtPieces({ pieces }) {
   return (
     <div>
-      <ul>
+      <>
         {pieces.map((piece) => {
           return (
             <ArtPiecePreview
@@ -14,7 +14,7 @@ export default function ArtPieces({ pieces }) {
             />
           );
         })}
-      </ul>
+      </>
     </div>
   );
 }
