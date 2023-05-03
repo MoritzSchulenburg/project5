@@ -22,4 +22,9 @@ const StyledCard = styled.div`
   width: fit-content;
   align-self: center;
   box-shadow: 4px 4px 4px 4px grey;
+
+  p {
+    font-size: 20px;
+    font-style: italic;
+  }
 `;
