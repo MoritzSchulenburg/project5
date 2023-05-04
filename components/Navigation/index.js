@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import Link from "next/link";
+// import Link from "next/link";
 
 export function Navigation() {
   return (
     <>
       <StyledNavigation>
         <StyledLi>
-          <a href="/">Home</a>
+          <a href="/">Pieces</a>
         </StyledLi>
         <StyledLi>
           <a className="SpotlightLink" href="/spotlight">
